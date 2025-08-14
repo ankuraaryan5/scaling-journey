@@ -43,7 +43,7 @@ export default function DebouncedSearchPage() {
   }, [query]);
 
   return (
-    <main className="min-h-screen bg-gray-900 flex items-center justify-center p-6">
+    <main className="min-h-screen bg-gray-100 flex items-center justify-center p-6 text-gray-100 dark:bg-gray-800">
       <div className="w-full max-w-md relative">
         <input
           type="text"
@@ -59,11 +59,11 @@ export default function DebouncedSearchPage() {
         )}
 
         {showDropdown && results.length > 0 && (
-          <ul className="absolute mt-1 w-full  border rounded-lg shadow-lg max-h-60 overflow-y-auto z-10">
+          <ul className="absolute mt-1 w-full  border rounded-lg shadow-lg max-h-60 overflow-y-auto z-10 bg-white dark:bg-gray-800">
             {results.map((product) => (
               <li
                 key={product.id}
-                className="px-4 py-2 hover:bg-gray-100 hover:text-red-500d cursor-pointer border-1 "
+                className="px-4 py-2 hover:bg-gray-100 hover:text-red-500d cursor-pointer border-1 dark:hover:bg-gray-800 dark:hover:text-white"
                 onClick={() => {
                   setQuery(product.title);
                   setShowDropdown(false);

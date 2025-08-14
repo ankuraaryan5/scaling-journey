@@ -34,7 +34,7 @@ export default function LoginPage() {
           placeholder="Username"
           value={username}
           onChange={e => setUsername(e.target.value)}
-          className="border p-2 rounded"
+          className="border p-2 rounded "
         />
         <input
           type="password"

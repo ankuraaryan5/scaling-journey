@@ -83,12 +83,12 @@ export default function FileUploadPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-start p-6 bg-gray-50">
+    <div className="min-h-screen flex flex-col items-center justify-start p-6 bg-gray-50 text-gray-900 ">
       <h1 className="text-3xl font-semibold mb-6">📁 Upload Your Image</h1>
 
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col gap-4 w-full max-w-md bg-white p-6 rounded shadow"
+        className="flex flex-col gap-4 w-full max-w-md bg-white  p-6 rounded shadow"
       >
         <label className="font-medium">Select Image</label>
         <input

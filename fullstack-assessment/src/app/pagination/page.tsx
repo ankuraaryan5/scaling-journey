@@ -15,7 +15,7 @@ export default function PaginationPage() {
   const searchParams = useSearchParams();
 
   // Get current page from URL or default to 1
-  const currentPage = parseInt(searchParams.get("page") || "1", 10);
+  const currentPage = parseInt(searchParams?.get("page") ?? "1", 10);
 
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(false);
